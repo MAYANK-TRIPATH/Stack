@@ -14,18 +14,18 @@ const Navbar: React.FC = () => {
         <img
           src="/src/assets/novo-logo.png"
           alt="Logo"
-          className="h-8 md:h-12 w-auto" // Smaller logo on mobile
+          className="h-8 md:h-12 w-auto"
         />
       </div>
 
-      {/* Hamburger Menu Icon (Mobile Only) */}
+
       <div className="md:hidden flex items-center gap-4">
         <button
           onClick={toggleMenu}
           className="text-gray-500 hover:text-blue-600 focus:outline-none"
           aria-label="Toggle menu"
         >
-          {/* Hamburger Icon (when closed) */}
+
           {!isOpen ? (
             <svg
               className="h-6 w-6"
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
               />
             </svg>
           ) : (
-            // X Icon (when open)
+
             <svg
               className="h-6 w-6"
               fill="none"
@@ -59,11 +59,10 @@ const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Navigation Links */}
+
       <div
-        className={`fixed md:relative top-0 right-0 h-full md:h-auto w-64 md:w-auto bg-slate-200 md:bg-transparent shadow-md md:shadow-none transform ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        } md:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 p-6 md:p-0`}
+        className={`fixed md:relative top-0 right-0 h-full md:h-auto w-64 md:w-auto bg-slate-200 md:bg-transparent shadow-md md:shadow-none transform ${isOpen ? "translate-x-0" : "translate-x-full"
+          } md:translate-x-0 transition-transform duration-300 ease-in-out flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 p-6 md:p-0`}
       >
         <a href="/" className="text-gray-500 hover:text-blue-600 text-md">
           HOME
