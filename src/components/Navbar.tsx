@@ -9,12 +9,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="flex justify-between items-center px-4 md:px-6 py-4 bg-slate-200 shadow-md border-b border-gray-300 md:border-none">
-      {/* Logo */}
+      
       <div className="ml-2 md:ml-4">
         <img
           src="/src/assets/novo-logo.png"
           alt="Logo"
-          className="h-8 md:h-12 w-auto"
+          className="h-8 md:h-16 w-auto"
         />
       </div>
 
